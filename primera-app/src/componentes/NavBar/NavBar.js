@@ -1,5 +1,6 @@
 
 import React from 'react';
+import CardWidget from '../CardWidget/CardWidget';
 
 const NavBar = () => {
     return(
@@ -27,11 +28,18 @@ const NavBar = () => {
                     <li><a class="dropdown-item nav-link" href="#">Samsung</a></li>
                     <li><a class="dropdown-item nav-link" href="#">Oppo</a></li>
                 </ul>
-                </li> 
+                </li>
+                <li class="nav-item">
+                    
+                </li>
+                
             </ul>
+                
             </div>
+            <CardWidget/>
         </div>
-</nav>
+       
+    </nav>
     )
 }
 
