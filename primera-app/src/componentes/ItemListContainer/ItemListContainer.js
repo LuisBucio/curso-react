@@ -1,6 +1,8 @@
 import React from "react"
 import { getProducts } from "../../asyncmok"
 import { useState, useEffect } from "react"
+import ItemList from '../ItemList/ItemList'
+import './ItemListContainer.css'
 
 const ItemListContainer = ({gretting}) => {
 
@@ -13,14 +15,16 @@ const ItemListContainer = ({gretting}) => {
     },[])
 
     return(
-      <div>
-        <h1 class="text-center mt-3 btn-outline-dark p-3">
+      <div className="ItemListContainer">
+        {/* <h1 class="text-center mt-3 btn-outline-dark p-3">
           {gretting}
       
         </h1>
         <ul class="text-center mt-3">
-          {products.map(products => <li key={products.id}>{products.name}</li>)} 
-        </ul>
+          {products.map(product => <li key={product.id}>{product.name}</li>)} 
+        </ul> */}
+         <ItemList products={products}/>
+       
       </div>
      
     )

@@ -4,6 +4,7 @@ import NavBar from './componentes/NavBar/NavBar';
 import * as bootstrap from 'bootstrap';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import ItemCount from './componentes/ItemCount/ItemCount';
+import ItemList from './componentes/ItemList/ItemList'
 
 
 
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <ItemListContainer gretting="Bienvenido a BL Swagger"/>
-      <ItemCount initial={0} stock={20} onAdd={onAdd}/>
+
     </div>
   );
 }
