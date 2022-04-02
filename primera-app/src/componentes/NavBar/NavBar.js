@@ -1,6 +1,7 @@
 
 import React from 'react';
 import CardWidget from '../CardWidget/CardWidget';
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return(
@@ -13,21 +14,13 @@ const NavBar = () => {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Audifonos</a>
+                <Link to='/category/Audifonos'class="nav-link">Audifonos</Link>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Accesorios</a>
+                <Link to='/category/Accesorios'class="nav-link">Accesorios</Link>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Celulares
-                    </a>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item nav-link" href="#">Apple</a></li>
-                    <li><a class="dropdown-item nav-link" href="#">Xiaomi</a></li>
-                    <li><a class="dropdown-item nav-link" href="#">Samsung</a></li>
-                    <li><a class="dropdown-item nav-link" href="#">Oppo</a></li>
-                </ul>
+                <Link to='/category/Celular' class="nav-link">Celular</Link>
                 </li>
                 <li class="nav-item">
                     

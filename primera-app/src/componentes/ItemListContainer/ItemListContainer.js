@@ -16,11 +16,11 @@ const ItemListContainer = ({gretting}) => {
 
     return(
       <div className="ItemListContainer">
-        {/* <h1 class="text-center mt-3 btn-outline-dark p-3">
+        {/* <h1 className="text-center mt-3 btn-outline-dark p-3">
           {gretting}
       
         </h1>
-        <ul class="text-center mt-3">
+        <ul className="text-center mt-3">
           {products.map(product => <li key={product.id}>{product.name}</li>)} 
         </ul> */}
          <ItemList products={products}/>
