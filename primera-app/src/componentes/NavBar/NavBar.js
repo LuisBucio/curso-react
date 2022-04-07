@@ -5,24 +5,24 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return(
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
-            <div class="container-fluid">
-                <Link to='/' class="navbar-brand" href="#">BL Swagger </Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+            <div className="container-fluid">
+                <Link to='/' className="navbar-brand" href="#">BL Swagger </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <Link to='/category/Audifonos'class="nav-link">Audifonos</Link>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                <Link to='/category/Audifonos'className="nav-link">Audifonos</Link>
                 </li>
-                <li class="nav-item ">
-                <Link to='/category/Accesorios'class="nav-link">Accesorios</Link>
+                <li className="nav-item ">
+                <Link to='/category/Accesorios'className="nav-link">Accesorios</Link>
                 </li>
-                <li class="nav-item dropdown">
-                <Link to='/category/Celular' class="nav-link">Celular</Link>
+                <li className="nav-item dropdown">
+                <Link to='/category/Celular' className="nav-link">Celular</Link>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                     
                 </li>
                 
