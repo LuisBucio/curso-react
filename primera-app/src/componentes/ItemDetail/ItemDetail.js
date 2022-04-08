@@ -11,7 +11,7 @@ const ItemDetail = ({name,category,img,stock,precio}) =>{
     }
 
     return(
-        <div className="text-center mt-5">
+        <div className="text-center mt-5 mb-5"> 
             <img src={img} className="rounded" alt={name}></img>
             <div className="card-body" >
             <h5>Detalles del Producto</h5>   
@@ -20,7 +20,7 @@ const ItemDetail = ({name,category,img,stock,precio}) =>{
             <p className="card-text">Precio:{precio}</p>
             <p className="card-text">Stock:{stock}</p>  
             </div>
-             { quantity === 0 ? <ItemCount onAdd={handleOnAdd}/> : <button>Ir al carrito</button>}
+             {quantity === 0 ? <ItemCount onAdd={handleOnAdd}/> : <button className="btn btn-dark">Ir al carrito</button>}
         </div>
     )
 }
