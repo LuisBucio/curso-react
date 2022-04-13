@@ -4,7 +4,7 @@ import ItemListContainer from './componentes/ItemListContainer/ItemListContainer
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import {useState,createContext} from 'react';
-import { CartContextProvider } from './context/cartContext';
+import { CartContextProvider } from './context/CartContext';
 
 export const CartContext = createContext()
 
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <CartContext.Provider value={{cart, setCart}}>
+      <CartContext.Provider>
         
       <BrowserRouter>
         <NavBar cart={cart}/>
