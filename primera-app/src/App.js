@@ -4,7 +4,8 @@ import ItemListContainer from './componentes/ItemListContainer/ItemListContainer
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import {useState,createContext} from 'react';
-import { CartContextProvider } from './context/CartContext';
+import { CartContextProvider } from '../src/context/CartContext';
+
 
 export const CartContext = createContext()
 
